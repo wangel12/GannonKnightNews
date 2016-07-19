@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/post_content_wrapper"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:padding="0dp"
+    android:background="#ffffff">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/img"
+        android:src="@drawable/default_bg"
+        android:layout_weight="4"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_date"
+        android:textColor="#bbbbbb"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="10dp"
+        android:text="date"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:id="@+id/post_title"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_author"
+        android:textColor="#bbbbbb"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="20dp"
+        android:textSize="13dp"
+        android:text="By "/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd">
+
+    </View>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/post_content"
+        android:scrollbars="horizontal"
+        android:textColor="#000000"
+        android:padding="10dp"/>
+
+
+</LinearLayout>
+</ScrollView>

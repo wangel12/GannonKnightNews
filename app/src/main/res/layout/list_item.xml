@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Name Label -->
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="2"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+           >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/default_bg"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:textColor="#acacac"
+                android:text="email"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello This is testing"
+                android:id="@+id/guid"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:textColor="#43bd00"
+                android:text="name:"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <!-- Email label -->
+
+            <!-- Mobile number label -->
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile: "
+                android:textColor="#5d5d5d"
+                android:maxLines="2"
+                android:layout_below="@+id/email"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
